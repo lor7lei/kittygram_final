@@ -49,7 +49,7 @@ build_and_push:
       uses: docker/build-push-action@v5
       with:
         context: ./backend
-        file: ./backend/Dockerfile.prod  # ← указываем новый файл
+        file: ./backend/Dockerfile.simple  # ← указываем новый файл
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/kittygram_backend:latest
         no-cache: true
