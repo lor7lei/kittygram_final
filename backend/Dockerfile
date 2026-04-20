@@ -12,6 +12,6 @@ COPY . .
 
 RUN mkdir -p /app/static
 
-RUN python manage.py collectstatic --noinput
+#RUN python manage.py collectstatic --noinput
 
 CMD ["gunicorn", "kittygram_backend.wsgi:application", "--bind", "0.0.0.0:8000"]
