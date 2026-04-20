@@ -91,3 +91,4 @@ jobs:
             ✅ Kittygram successfully deployed!
             Repository: ${{ github.repository }}
             Commit: ${{ github.sha }}
+            Author: ${{ github.actor }}
